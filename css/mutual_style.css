@@ -1,5 +1,5 @@
 /* nav */
-.oversigt {
+.top_menu {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -8,7 +8,6 @@
   margin: 0;
   height: 80px;
   text-align: center;
-  z-index: 1;
 }
 
 #index img {
@@ -28,17 +27,19 @@ nav a {
 }
 
 nav {
+  position: relative;
   background-color: black;
+  z-index: 1;
 }
 
 @media (min-width: 650px) {
-  .oversigt {
+  .top_menu {
     flex-direction: row;
   }
 }
 
 @media (min-width: 1500px) {
-  .oversigt {
+  .top_menu {
     flex-direction: row;
   }
 }
@@ -118,5 +119,4 @@ footer {
   background-color: black;
   height: 60px;
   color: white;
-  position: sticky;
 }
