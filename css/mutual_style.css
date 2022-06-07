@@ -20,6 +20,12 @@
   display: flex;
 }
 
+nav {
+  position: relative;
+  background-color: black;
+  z-index: 1;
+}
+
 nav a {
   text-decoration: none;
   color: white;
@@ -27,10 +33,12 @@ nav a {
   font-size: 1.6rem;
 }
 
-nav {
-  position: relative;
-  background-color: black;
-  z-index: 1;
+nav ul li:not(:last-child, :first-child) {
+  border-right: 2px solid white;
+}
+
+nav ul li a {
+  padding: 10px 15px;
 }
 
 @media (min-width: 650px) {
@@ -43,10 +51,6 @@ nav {
   .top_menu {
     flex-direction: row;
   }
-}
-
-nav li {
-    padding: 5px;
 }
 
 nav li :hover {
