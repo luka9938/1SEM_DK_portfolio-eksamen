@@ -2,7 +2,7 @@
   display: grid;
   place-content: center center;
   width: 100%;
-  height: clamp(300px, 65vw, 125vh);
+  height: clamp(300px, 85vw, 125vh);
   background-image: url(/img/splash.webp);
   background-size: cover;
   color: white;
@@ -15,9 +15,9 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 5px;
-  margin: 60px;
+  margin: 60px 0;
   height: 85vh;
-  margin-block-end: 100px;
+  margin-block-end: 60px;
 }
 
 #bottom_menu img {
@@ -25,6 +25,6 @@
   background-position: 0% 0%;
   object-fit: cover;
   height: 868px;
-  width: 186px;
+  width: 196px;
   justify-content: center;
 }
