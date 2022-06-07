@@ -1,0 +1,122 @@
+/* nav */
+.oversigt {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  height: 80px;
+  text-align: center;
+  z-index: 1;
+}
+
+#index img {
+  min-width: 300px;
+  max-width: 400px;
+}
+
+#index {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Kameron";
+  font-size: 1.6rem;
+}
+
+nav {
+  background-color: black;
+}
+
+@media (min-width: 650px) {
+  .oversigt {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1500px) {
+  .oversigt {
+    flex-direction: row;
+  }
+}
+
+nav li {
+    padding: 5px;
+}
+
+nav li :hover {
+  text-decoration: underline;
+  color: grey;
+}
+
+/* Overskrift */
+#overskrift h1,
+#overskrift p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*  */
+
+/* Typografi */
+h1 {
+  font-family: "Kameron";
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Kameron";
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Kameron";
+  font-size: 30px;
+}
+
+p,
+a,
+footer,
+li {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+}
+
+/* li 40px padding fejl */
+li {
+  padding-left: 0;
+}
+
+cite {
+  font-family: "Kameron";
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Body */
+body {
+  margin: 0 auto;
+}
+
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+  height: 60px;
+  color: white;
+  position: sticky;
+}
