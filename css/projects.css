@@ -1,0 +1,27 @@
+#splash_projects {
+    background-image: url(/img/splash.webp);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-block-start: 30px;
+    align-self: center;
+}
+
+.col {
+    flex: 1;
+    margin: 20px 0;
+}
+
+.col_img {
+    flex: 1;
+    margin: 20px 0;
+}
+
+.col_img img {
+    width: 595px;
+    height: 595px;
+    object-fit: cover;
+}

@@ -1,0 +1,30 @@
+#splash_about {
+    background-image: url(/img/splash.webp);
+}
+
+@media (min-width: 650px) {
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin: 0;
+    }
+}
+
+.grid_1-1{
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+    margin: 0 20px;
+}
+
+.profile{
+    text-align: center;
+}
+
+.profile img {
+    max-width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 60px;
+}

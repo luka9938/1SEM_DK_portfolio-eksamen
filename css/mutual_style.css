@@ -1,4 +1,5 @@
 /* nav */
+
 .top_menu {
   display: flex;
   flex-direction: column;
@@ -6,7 +7,7 @@
   align-items: center;
   list-style: none;
   margin: 0;
-  height: 60px;
+  height: 120px;
   text-align: center;
   padding-inline-start: 0px;
 }
@@ -33,10 +34,6 @@ nav a {
   font-size: 1.6rem;
 }
 
-nav ul li:not(:last-child, :first-child) {
-  border-right: 2px solid white;
-}
-
 nav ul li a {
   padding: 10px 15px;
 }
@@ -44,13 +41,15 @@ nav ul li a {
 @media (min-width: 650px) {
   .top_menu {
     flex-direction: row;
+    height: 60px;
+  }
+  nav ul li:not(:last-child, :first-child) {
+    border-right: 2px solid white;
   }
 }
 
 @media (min-width: 1500px) {
-  .top_menu {
-    flex-direction: row;
-  }
+
 }
 
 nav li :hover {
@@ -68,21 +67,35 @@ nav li :hover {
 
 /*  */
 
+/* Splash */
+
+.splash {
+  display: grid;
+  place-content: center center;
+  width: 100%;
+  height: clamp(200px, 15vw, 125vh);
+  background-size: cover;
+  color: white;
+  box-shadow: darkgray 0px 7px 29px 0px;
+}
+
 /* Typografi */
-h1 {
+h1, h2, h3 {
   font-family: "Kameron";
+  margin: 0;
+}
+
+h1 {
   font-size: 5rem;
   text-align: center;
 }
 
 h2 {
-  font-family: "Kameron";
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 h3 {
-  font-family: "Kameron";
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 p,
@@ -91,6 +104,10 @@ footer,
 li {
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
+}
+
+p {
+  max-width: 60ch;
 }
 
 /* li 40px padding fejl */
@@ -124,4 +141,5 @@ footer {
   background-color: black;
   height: 60px;
   color: white;
+  padding: 10px 15px;
 }
