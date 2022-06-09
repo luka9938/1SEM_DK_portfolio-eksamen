@@ -1,5 +1,5 @@
 #splash_forside {
-  height: clamp(300px, 65vw, 125vh);
+  height: clamp(300px, 55vw, 125vh);
   background-image: url(/img/splash.webp);
 }
 
@@ -30,8 +30,8 @@
 @media (min-width: 650px) {
   #bottom_menu{
     flex-direction: row;
-
   }
+  
 #bottom_menu li a img {
     max-width: 10vw;
     height: 80vh;
