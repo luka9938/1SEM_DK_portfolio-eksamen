@@ -4,31 +4,17 @@
     border-bottom: 4px solid #402D1D;
 }
 
-@media (min-width: 650px) {
-    .grid_1-1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-        margin: 0;
-    }
-}
-
-.grid_1-1{
-    padding-block-start: 80px;
-    padding-block-end: 160px;
-    margin: 0 20px;
-}
-
-.profile{
-    display: flex;
-    justify-content: center;
-}
-
-.profile img {
-
+#profile {
     max-width: 40vh;
     height: 40vh;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 60px;
+}
+
+.about {
+    margin-top: 107px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

@@ -107,6 +107,7 @@ p,
 a,
 li {
   font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
   font-size: 16px;
   color: #402D1D;
 }
@@ -116,7 +117,7 @@ p {
 }
 
 /* li 40px padding fejl */
-li {
+li, ul {
   padding-left: 0;
 }
 
@@ -130,6 +131,24 @@ body {
 main {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.col {
+  flex: 1;
+  margin: 20px 0;
+}
+
+.col_img {
+  display: flex;
+  flex: 1;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.col_img img {
+  width: 595px;
+  height: 595px;
+  object-fit: cover;
 }
 
 /* Footer */

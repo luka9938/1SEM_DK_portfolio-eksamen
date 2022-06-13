@@ -1,4 +1,4 @@
-function openCity(evt, cityName) {
+function openTheme(evt, themeName) {
     var i, x, tablinks;
     x = document.getElementsByClassName("tabcontent");
     tablinks = document.getElementsByClassName("tablink");
@@ -18,7 +18,7 @@ function Tablinks(){
     var theme = window.location.hash.substring(1);
     var li = document.getElementById(theme+"_link")
     if (theme && li){
-        openCity(li, theme);
+        openTheme(li, theme);
     }
 }
 

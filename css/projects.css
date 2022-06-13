@@ -17,7 +17,6 @@
 }
 
 .tab-wrap .tab-main{
-    padding:0 20px 20px; 
     border-top:0;
 }
 
@@ -32,28 +31,4 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.col {
-    flex: 1;
-    margin: 20px 0;
-}
-
-.col_img {
-    flex: 1;
-    margin: 20px 0;
-}
-
-.col_img img {
-    width: 595px;
-    height: 595px;
-    object-fit: cover;
-}
-
-[data-tab-content] {
-    display: none;
-}
-
-.active[data-tab-content] {
-    display: block;
 }
