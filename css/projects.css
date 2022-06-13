@@ -32,8 +32,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-block-start: 30px;
-    align-self: center;
 }
 
 .col {
