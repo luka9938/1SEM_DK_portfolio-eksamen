@@ -42,7 +42,7 @@ nav {
 nav a {
   text-decoration: none;
   color: #735E4C;
-  font-family: "grobe deutchmeister", sans-serif;
+  font-family: 'Mrs Sheppards', cursive;
   font-size: 2.6rem;
   font-weight: 800;
 }
@@ -76,31 +76,37 @@ nav li :hover {
 }
 
 /* Typografi */
-h1, h2, h3 {
-  font-family: "grobe deutchmeister", sans-serif;;
+h1, h3 {
+  font-family: 'Mrs Sheppards', cursive;
   margin: 0;
 }
 
 h1 {
   color: #402D1D;
-  font-size: 10rem;
+  font-size: 7rem;
   text-align: center;
-  text-decoration-line: underline;
   text-decoration-style: solid;
 }
 
 h2 {
+  display: flex;
+  font-family: "grobe deutchmeister";
   font-size: 3rem;
   color: #FFFFFF;
   text-shadow: 2px 2px #402D1D;
   background-color: #91B7BF;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 140px;
+  margin: 0;
 }
 
 h3 {
   font-size: 2rem;
   color: #bea691;
+  margin: 10px;
 }
 
 p,
@@ -114,6 +120,7 @@ li {
 
 p {
   max-width: 60ch;
+  margin: 0 10px;
 }
 
 /* li 40px padding fejl */
@@ -142,7 +149,7 @@ main {
   display: flex;
   flex: 1;
   margin: 20px 0;
-  justify-content: center;
+  place-content: center center;
 }
 
 .col_img img {
@@ -177,5 +184,17 @@ footer {
   
   nav ul li:last-child {
     order: 0;
+  }
+
+  h1 {
+    color: #402D1D;
+    font-size: 10rem;
+    text-align: center;
+    text-decoration-style: solid;
+  }
+
+  h2 {
+    margin-top: 60px;
+    height: 100px;
   }
 }

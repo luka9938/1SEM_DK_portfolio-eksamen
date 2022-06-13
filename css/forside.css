@@ -40,7 +40,7 @@
   text-align: center;
   padding-inline-start: 0px;
   gap: 15px;
-  padding-block-start: 90px;
+  padding-block-start: 120px;
   padding-block-end: 60px;
   border-top: none;
 }
@@ -74,7 +74,7 @@
     transform: none;
     width: 150px;
   }
-  
+
   .col-1 img {
     transform: none;
     margin-top: 40px;
