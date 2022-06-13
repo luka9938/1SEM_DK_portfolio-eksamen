@@ -1,5 +1,7 @@
 #splash_about {
-    background-image: url(/img/splash.webp);
+    background-image: url(/img/Pattern.webp);
+    border-top: 4px solid #402D1D;
+    border-bottom: 4px solid #402D1D;
 }
 
 @media (min-width: 650px) {
@@ -18,10 +20,12 @@
 }
 
 .profile{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .profile img {
+
     max-width: 40vh;
     height: 40vh;
     object-fit: cover;

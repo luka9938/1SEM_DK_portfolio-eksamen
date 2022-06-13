@@ -1,5 +1,14 @@
 /* nav */
 
+@font-face {
+  font-family:"grobe deutchmeister";
+  src: url("../fonts/grobe_deutschmeister.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 div {
   box-sizing: border-box;
 }
@@ -7,18 +16,17 @@ div {
 .top_menu {
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: center;
   align-items: center;
   list-style: none;
   margin: 0;
-  height: 120px;
+  height: 250px;
   text-align: center;
   padding-inline-start: 0px;
 }
 
-#index img {
-  min-width: 300px;
-  max-width: 400px;
+.top_menu li {
+  width: 300px;
 }
 
 #index {
@@ -27,15 +35,16 @@ div {
 
 nav {
   position: relative;
-  background-color: #bea691;
+  background-color: #91B7BF;
   z-index: 1;
 }
 
 nav a {
   text-decoration: none;
-  color: #402D1D;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
+  color: #735E4C;
+  font-family: "grobe deutchmeister", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
 }
 
 nav ul li:first-child {
@@ -50,29 +59,8 @@ nav ul li a {
   padding: 10px 15px;
 }
 
-@media (min-width: 650px) {
-  .top_menu {
-    flex-direction: row;
-    height: 60px;
-  }
-
-  #index {
-    border-left: 5px solid #402D1D;
-    border-right: 5px solid #402D1D;
-  }
-
-  nav ul li:first-child {
-    order: 0;
-  }
-  
-  nav ul li:last-child {
-    order: 0;
-  }
-}
-
 nav li :hover {
-  text-decoration: underline;
-  color: #8C7A6B;
+  color: #406A73;
 }
 
 /* Splash */
@@ -83,35 +71,43 @@ nav li :hover {
   width: 100%;
   height: clamp(200px, 15vw, 125vh);
   background-size: cover;
-  color: white;
+  color: #FFFFFF;
   box-shadow: #402D1D 0px 7px 29px 0px;
 }
 
 /* Typografi */
 h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;;
+  font-family: "grobe deutchmeister", sans-serif;;
   margin: 0;
 }
 
 h1 {
-  font-size: 5rem;
+  color: #402D1D;
+  font-size: 10rem;
   text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
 }
 
 h2 {
   font-size: 3rem;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #402D1D;
+  background-color: #91B7BF;
+  text-align: center;
 }
 
 h3 {
   font-size: 2rem;
+  color: #bea691;
 }
 
 p,
 a,
-footer,
 li {
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
+  color: #402D1D;
 }
 
 p {
@@ -123,15 +119,9 @@ li {
   padding-left: 0;
 }
 
-cite {
-  font-family: "Montserrat", sans-serif;
-  font-size: 25px;
-  text-align: center;
-}
-
 /* Body */
 body {
-  background-color: #bea691;
+  background-color: #FFECDB;
   margin: 0 auto;
 }
 
@@ -147,8 +137,25 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 60px;
-  background-color: #bea691;
-  color: #402D1D;
+  height: 30px;
+  background-color: #91B7BF;
+  font-family: "grobe deutchmeister";
+  font-size: 2rem;
+  color: #FFECDB;
   padding: 10px 15px;
+}
+
+@media (min-width: 650px) {
+  .top_menu {
+    flex-direction: row;
+    height: 100px;
+  }
+
+  nav ul li:first-child {
+    order: 0;
+  }
+  
+  nav ul li:last-child {
+    order: 0;
+  }
 }

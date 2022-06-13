@@ -1,18 +1,33 @@
 #splash_forside {
+  display: flex;
   height: clamp(300px, 51vw, 100vh);
   background-image: url(/img/Pattern.webp);
-  border: solid 4px #402D1D;
-  justify-content: center;
+  border-bottom: solid 4px #735E4C;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: center;
 }
 
 .col-1 {
-  display: block;
-  border: solid 4px #402D1D;
-  background-color: #bea691;
-  transform: rotate(90deg);
-  height: clamp(300px, 51vw, 100vh);
-  width: clamp(50px, 25vw, 100vh);
+  display: flex;
+  background-color: #91B7BF;
+  border-bottom: solid 4px #402D1D;
+  border-top: solid 4px #402D1D;
+  height: 65%;
+  width: 100%;
+  margin: 0; 
+  align-items: center;
   justify-content: center;
+}
+
+.col-1 img{
+  width: 35vw;
+  transform: rotate(90deg);
+}
+
+.scroll_down img{
+  width: 0%;
+  height: 0%;
 }
 
 #bottom_menu {
@@ -25,9 +40,8 @@
   text-align: center;
   padding-inline-start: 0px;
   gap: 15px;
-  padding-block-start: 60px;
+  padding-block-start: 90px;
   padding-block-end: 60px;
-  border: solid 4px #402D1D;
   border-top: none;
 }
 
@@ -42,16 +56,6 @@
 }
 
 @media (min-width: 650px) {
-  #bottom_menu{
-    flex-direction: row;
-  }
-  
-  #bottom_menu li a img {
-    max-width: clamp(100px, 8vw, 100vh);
-    height: 80vh;
-    object-fit: cover;
-  }
-
   #splash_forside {
     display: flex;
     flex-direction: row;
@@ -64,14 +68,46 @@
   }
 
   .col-1 {
+    height: clamp(350px, 51vw, 100vh);
+    border: none;
     border-right: solid 4px #402D1D;
-    background-color: #bea691;
-    border-left: none;
     transform: none;
+    width: 150px;
   }
   .col-1 img {
+    transform: none;
     margin-top: 40px;
     margin-left: 40px;
-    width: 50%;
+    width: 59%;
+    margin-bottom: 50px;
+  }
+
+  .col-3 {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .scroll_down {
+    display: block;
+    border: solid 4px #402D1D;
+    border-bottom: none;
+    background-color: #735E4C;
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .scroll_down img{
+    width: 100%;
+    height: 100%;
+  }
+
+  #bottom_menu{
+    flex-direction: row;
+  }
+  
+  #bottom_menu li a img {
+    max-width: clamp(100px, 8vw, 100vh);
+    height: 75vh;
+    object-fit: cover;
   }
 }

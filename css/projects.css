@@ -1,5 +1,7 @@
 #splash_projects {
-    background-image: url(/img/splash.webp);
+    background-image: url(/img/Pattern.webp);
+    border-top: 4px solid #402D1D;
+    border-bottom: 4px solid #402D1D;
 }
 
 .container {
@@ -24,4 +26,12 @@
     width: 595px;
     height: 595px;
     object-fit: cover;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
 }
