@@ -34,55 +34,59 @@
       <h1>Projects</h1>
     </div>
     <main>
-      <ul>
-        <li data-tab-target="#theme_02">theme_02</li>
-        <li data-tab-target="#theme_03">theme_03</li>
-        <li data-tab-target="#theme_04">theme_04</li>
-        <li data-tab-target="#theme_05">theme_05</li>
-        <li data-tab-target="#theme_06">theme_06</li>
-      </ul>
-      <div class="tab-content">
-      <article id="Theme_02" data-tab-target>
+      <div class="tab-wrap">
+        <div class="tab-body">
+        <ul class="tab-header">
+        <li class="tablink tab-active" onclick="openCity(this,'Theme_02')" data-target="Theme_02">tema_02</li>
+        <li class="tablink" onclick="openCity(this,'Theme_03')" data-target="Theme_03">theme_03</li>
+        <li class="tablink" onclick="openCity(this,'Theme_04')" data-target="Theme_04">theme_04</li>
+        <li class="tablink" onclick="openCity(this,'Theme_05')" data-target="Theme_05">theme_05</li>
+        <li class="tablink" onclick="openCity(this,'Theme_06')" data-target="Theme_06">theme_06</li>
+        </ul>
+      <div class="tab-main">
+      <article id="Theme_02" class="tabcontent active">
         <div class="col">
-          <h2>Theme_02</h2>
-          <h3>All Low / Standards projects</h3>
+          <h2>Grundlæggende HTML</h2>
+          <h3>Responsive_site_v2</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</p>
         </div>
         <picture class="col_img"><img src="img/splash.webp" alt="logo" /></picture>
       </article>
-      <article id="Theme_03" data-tab-target>
+      <article id="Theme_03" class="tabcontent">
         <div class="col">
           <h2>Theme_03</h2>
-          <h3>All Low / Standards projects</h3>
+          <h3>Prototype 2</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</p>
         </div>
         <picture class="col_img"><img src="img/splash.webp" alt="logo" /></picture>
       </article>
-      <article id="Theme_04" data-tab-target>
+      <article id="Theme_04" class="tabcontent">
         <div class="col">
           <h2>Theme_04</h2>
-          <h3>All Low / Standards projects</h3>
+          <h3>Temaopgave</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</p>
         </div>
         <picture class="col_img"><img src="img/splash.webp" alt="logo" /></picture>
       </article>
-      <article id="Theme_05" data-tab-target>
+      <article id="Theme_05" class="tabcontent">
         <div class="col">
           <h2>Theme_05</h2>
-          <h3>All Low / Standards projects</h3>
+          <h3>Pilotsite</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</p>
         </div>
         <picture class="col_img"><img src="img/splash.webp" alt="logo" /></picture>
       </article>
-      <article id="Theme_06" data-tab-target>
+      <article id="Theme_06" class="tabcontent">
         <div class="col">
           <h2>Theme_06</h2>
-          <h3>All Low / Standards projects</h3>
+          <h3>Portfolio sitet</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</p>
         </div>
         <picture class="col_img"><img src="img/splash.webp" alt="logo" /></picture>
       </article>
     </div>
+      </div>
+      </div>
     </main>
     <footer>Lukas Gravgaard</footer>
   </body>

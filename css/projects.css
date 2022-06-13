@@ -4,7 +4,31 @@
     border-bottom: 4px solid #402D1D;
 }
 
-.container {
+.tab-wrap .tablink {
+    display:table-cell;
+    border-bottom:3px solid transparent;
+    padding:16px 8px;
+    color:rgba(0,0,0,0.87); cursor:pointer;
+}
+
+.tab-wrap .tablink.tab-active{
+    border-color:#12a7c8; 
+    color:#12a7c8;
+}
+
+.tab-wrap .tab-main{
+    padding:0 20px 20px; 
+    border-top:0;
+}
+
+.tab-wrap .tabcontent{
+    display:none;
+    padding-top:20px; 
+    font-size:15px; 
+    color:rgba(0,0,0, 0.87);
+}
+
+.tab-wrap .tabcontent.active{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
