@@ -5,25 +5,25 @@
 }
 
 .tab-wrap .tablink {
-    display:table-cell;
-    border-bottom:3px solid transparent;
-    padding:16px 8px;
-    color:#735E4C; cursor:pointer;
+    display: table-cell;
+    border-bottom: 4px solid transparent;
+    padding: 16px 16px;
+    color: #735E4C; cursor:pointer;
 }
 
 .tab-wrap .tablink.tab-active{
-    border-color:#406A73; 
+    border-color: #406A73; 
     color: #406A73;
 }
 
 .tab-wrap .tab-main{
-    border-top:0;
+    border-top: 0;
 }
 
 .tab-wrap .tabcontent{
-    display:none;
-    font-size:15px;
-    color:#735E4C;
+    display: none;
+    font-size: 15px;
+    color: #735E4C;
 }
 
 .tab-wrap .tabcontent.active{
