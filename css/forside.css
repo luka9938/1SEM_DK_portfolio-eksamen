@@ -53,11 +53,6 @@
   object-fit: cover;
 }
 
-p {
-  font-family: 'Mrs Sheppards', cursive;
-  text-decoration: none;
-}
-
 @media (min-width: 650px) {
   #splash_forside {
     display: flex;
