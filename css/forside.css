@@ -49,12 +49,13 @@
 
 #bottom_menu li a img {
   max-width: 20vw;
-  height: 50vh;
+  height: 40vh;
   object-fit: cover;
 }
 
-p{
-  font-family: 'grobe deutchmeister';
+p {
+  font-family: 'Mrs Sheppards', cursive;
+  text-decoration: none;
 }
 
 @media (min-width: 650px) {
@@ -108,7 +109,7 @@ p{
     flex-direction: row;
     gap: 15px;
     padding-block-start: 120px;
-    padding-block-end: 60px;
+    padding-block-end: 90px;
   }
 
   #bottom_menu li a img {
