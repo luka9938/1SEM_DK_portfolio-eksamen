@@ -154,7 +154,7 @@ main {
 
 .col_img img {
   width: 595px;
-  height: 595px;
+  height: 300px;
   object-fit: cover;
 }
 
