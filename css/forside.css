@@ -1,7 +1,7 @@
 #splash_forside {
   display: flex;
   height: clamp(300px, 51vw, 100vh);
-  background-image: url(../img/Pattern.webp);
+  background-image: url(/img/Pattern.webp);
   border-bottom: solid 4px #735E4C;
   flex-direction: column;
   flex-wrap: wrap;
@@ -39,20 +39,22 @@
   margin: 0;
   text-align: center;
   padding-inline-start: 0px;
-  gap: 15px;
-  padding-block-start: 120px;
-  padding-block-end: 60px;
   border-top: none;
 }
 
 #bottom_menu li {
   text-align: center;
+  transform: rotate(90deg);
 }
 
 #bottom_menu li a img {
-  max-width: 80vw;
-  height: 10vh;
+  max-width: 20vw;
+  height: 50vh;
   object-fit: cover;
+}
+
+p{
+  font-family: 'grobe deutchmeister';
 }
 
 @media (min-width: 650px) {
@@ -101,14 +103,21 @@
     width: 100%;
     height: 100%;
   }
-
-  #bottom_menu{
-    flex-direction: row;
-  }
   
+  #bottom_menu {
+    flex-direction: row;
+    gap: 15px;
+    padding-block-start: 120px;
+    padding-block-end: 60px;
+  }
+
   #bottom_menu li a img {
     max-width: clamp(100px, 8vw, 100vh);
     height: 75vh;
     object-fit: cover;
+  }
+
+  #bottom_menu li {
+    transform: none;
   }
 }
