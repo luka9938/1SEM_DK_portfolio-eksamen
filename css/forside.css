@@ -99,6 +99,10 @@
     padding: 40px 20px;
   }
 
+  .scroll_down:hover {
+    background-color: #402D1D;
+  }
+
   .scroll_down img{
     width: 100%;
     height: 100%;

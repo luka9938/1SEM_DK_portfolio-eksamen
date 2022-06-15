@@ -11,9 +11,14 @@
     color: #735E4C; cursor:pointer;
 }
 
-.tab-wrap .tab-active{
+.tab-wrap .tablink:hover {
     border-color: #406A73; 
     color: #406A73;
+}
+
+.tab-wrap .tab-active{
+    border-color: #402D1D; 
+    color: #402D1D;
 }
 
 .tab-wrap .tab_main{
