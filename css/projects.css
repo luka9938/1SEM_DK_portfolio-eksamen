@@ -1,9 +1,11 @@
+/* Splash */
 #splash_projects {
     background-image: url(../img/pattern.webp);
     border-top: 4px solid #402D1D;
     border-bottom: 4px solid #402D1D;
 }
 
+/* Tabs */
 .tab-wrap .tablink {
     display: table-cell;
     border-bottom: 4px solid transparent;
@@ -51,6 +53,7 @@
     font-size: 2rem;
 }
 
+/* Main */
 .col a {
     font-family: "grobe deutchmeister", cursive;
     margin: 0 10px;
@@ -59,6 +62,7 @@
 }
 
 @media (min-width: 650px) {
+    /* Tabs */
     .tab-header {
         flex-direction: row;
     }    

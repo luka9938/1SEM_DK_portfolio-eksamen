@@ -1,10 +1,19 @@
+/* splash */
 #splash_about {
     background-image: url(../img/pattern.webp);
     border-top: 4px solid #402D1D;
     border-bottom: 4px solid #402D1D;
 }
 
+/* main */
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 #profile {
+    display: flex;
     max-width: 41vh;
     height: 60vh;
     object-fit: cover;
@@ -17,12 +26,6 @@ section {
 
 section :first-child {
     font-weight: 1000;
-}
-
-.about {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 @media (min-width: 650px) {

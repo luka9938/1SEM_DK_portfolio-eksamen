@@ -1,3 +1,4 @@
+/* Generel */
 @font-face {
   font-family:"grobe deutchmeister";
   src: url("../fonts/grobe_deutschmeister.ttf") format("truetype");
@@ -117,16 +118,15 @@ a,
 li {
   font-family: 'Source Code Pro', monospace;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   color: #735E4C;
 }
 
 p {
   max-width: 60ch;
-  margin: 0 10px;
+  margin: 0 20px 20px;
 }
 
-/* li 40px padding fejl */
 li, ul {
   list-style: none;
   padding-left: 0;
@@ -150,7 +150,7 @@ main {
 
 .col {
   flex: 1;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .col_img {
@@ -158,7 +158,7 @@ main {
   flex-direction: column;
   flex: 1;
   margin: 0;
-  place-content: center center;
+  align-items: center;
 }
 
 .col_img img {
@@ -166,6 +166,7 @@ main {
   width: 370px;
   height: 190px;
   object-fit: cover;
+  border: solid 4px #bea691;
 }
 
 /* Footer */
@@ -183,7 +184,7 @@ footer {
 }
 
 @media (min-width: 650px) {
-
+  /* nav */
   nav ul li:first-child {
     order: 0;
   }
@@ -197,6 +198,7 @@ footer {
     height: 100px;
   }
 
+  /* Typografi */
   h1 {
     color: #402D1D;
     font-size: 10rem;
@@ -209,10 +211,7 @@ footer {
     height: 100px;
   }
 
-  h3:first-child {
-    margin-top: 20px;
-  }
-
+  /* Main */
   .col_img{
     margin: 20px 0;
   }
