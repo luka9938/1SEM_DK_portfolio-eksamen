@@ -47,6 +47,10 @@
   transform: rotate(90deg);
 }
 
+#bottom_menu li:hover {
+  opacity: 0.5;
+}
+
 #bottom_menu li a img {
   max-width: 20vw;
   height: 40vh;

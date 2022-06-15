@@ -5,15 +5,28 @@
 }
 
 #profile {
-    max-width: 40vh;
-    height: 40vh;
+    max-width: 41vh;
+    height: 80vh;
     object-fit: cover;
-    border-radius: 50%;
     margin-bottom: 10px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section :first-child {
+    font-weight: 1000;
 }
 
 .about {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+@media (min-width: 650px) {
+    #profile {
+        max-width: 61vh;
+    }    
 }
