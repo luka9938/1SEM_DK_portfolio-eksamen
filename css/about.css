@@ -6,7 +6,7 @@
 
 #profile {
     max-width: 41vh;
-    height: 80vh;
+    height: 60vh;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -28,5 +28,6 @@ section :first-child {
 @media (min-width: 650px) {
     #profile {
         max-width: 61vh;
+        height: 95vh;
     }    
 }
