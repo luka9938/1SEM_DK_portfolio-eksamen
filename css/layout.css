@@ -2,11 +2,10 @@
 #splash_forside {
   display: flex;
   height: clamp(300px, 51vw, 100vh);
-  background-image: url(../img/pattern.webp);
   border-bottom: solid 4px #735E4C;
   flex-direction: column;
   flex-wrap: wrap;
-  align-self: center;
+  align-items: flex-end;
 }
 
 #splash_else {

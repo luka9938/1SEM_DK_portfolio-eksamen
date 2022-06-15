@@ -65,14 +65,14 @@ nav li :hover {
 }
 
 /* Splash */
-
 .splash {
   display: grid;
   background-image: url(../img/pattern.webp);
   background-size: cover;
   width: 100%;
   height: clamp(200px, 15vw, 125vh);
-  place-content: center center;
+  justify-content: center;
+  align-items: center;
   color: #FFFFFF;
   box-shadow: #402D1D 0px 7px 29px 0px;
 }
