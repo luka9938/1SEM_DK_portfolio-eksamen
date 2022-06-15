@@ -4,6 +4,16 @@
   src: url("../fonts/grobe_deutschmeister.ttf") format("truetype");
 }
 
+:root {
+  --white: #FFFFFF;
+  --sand: #FFECDB;
+  --dark-sand: #bea691;
+  --rock: #735E4C;
+  --dark-rock:#402D1D;
+  --blue: #91B7BF;
+  --dark-blue: #406A73;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,13 +26,13 @@ div {
 
 nav {
   position: relative;
-  background-color: #91B7BF;
+  background-color: var(--blue);
   z-index: 1;
 }
 
 nav a {
   text-decoration: none;
-  color: #735E4C;
+  color: var(--rock);
   font-family: 'Mrs Sheppards', cursive;
   font-size: 2.6rem;
   font-weight: 800;
@@ -41,7 +51,7 @@ nav ul li a {
 }
 
 nav li :hover {
-  color: #406A73;
+  color: var(--dark-blue);
 }
 
 
@@ -50,9 +60,9 @@ nav li :hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 0;
   height: 250px;
-  text-align: center;
   padding-inline-start: 0px;
 }
 
@@ -73,8 +83,9 @@ nav li :hover {
   height: clamp(200px, 15vw, 125vh);
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
-  box-shadow: #402D1D 0px 7px 29px 0px;
+  text-align: center;
+  color: var(--white);
+  box-shadow: var(--dark-rock) 0px 7px 29px 0px;
 }
 
 /* Typografi */
@@ -84,7 +95,7 @@ h1, h3 {
 }
 
 h1 {
-  color: #402D1D;
+  color: var(--dark-rock);
   font-size: 7rem;
   text-align: center;
   text-decoration-style: solid;
@@ -94,19 +105,19 @@ h2 {
   display: flex;
   font-family: "grobe deutchmeister";
   font-size: 3rem;
-  color: #FFFFFF;
-  text-shadow: 2px 2px #402D1D;
-  background-color: #91B7BF;
-  text-align: center;
+  color: var(--white);
+  text-shadow: 2px 2px var(--dark-rock);
+  background-color: var(--blue);
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   margin: 0;
 }
 
 h3 {
   font-size: 2rem;
-  color: #bea691;
+  color: var(--dark-sand);
   margin: 40px 10px 20px
 }
 
@@ -120,7 +131,7 @@ li {
   font-family: 'Source Code Pro', monospace;
   font-weight: 500;
   font-size: 1rem;
-  color: #735E4C;
+  color: var(--rock);
 }
 
 p {
@@ -139,7 +150,7 @@ li{
 
 /* Body */
 body {
-  background-color: #FFECDB;
+  background-color: var(--sand);
   margin: 0 auto;
 }
 
@@ -167,20 +178,21 @@ main {
   width: 370px;
   height: 190px;
   object-fit: cover;
-  border: solid 4px #bea691;
+  border: solid 4px var(--dark-sand);
 }
 
 /* Footer */
 footer {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: 30px;
-  background-color: #91B7BF;
+  background-color: var(--blue);
   font-family: "grobe deutchmeister";
   font-size: 2rem;
-  color: #FFECDB;
+  color: var(--sand);
   padding: 10px 15px;
 }
 
@@ -201,7 +213,7 @@ footer {
 
   /* Typografi */
   h1 {
-    color: #402D1D;
+    color: var(--dark-rock);
     font-size: 10rem;
     text-align: center;
     text-decoration-style: solid;
@@ -218,9 +230,7 @@ footer {
   }
 
   .col_img img {
-    margin: 20px;
     width: 595px;
     height: 300px;
-    object-fit: cover;
   }
 }

@@ -2,23 +2,23 @@
 #splash_forside {
   display: flex;
   height: clamp(300px, 51vw, 100vh);
-  border-bottom: solid 4px #735E4C;
+  border-bottom: solid 4px var(--rock);
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-end;
 }
 
 #splash_else {
-  border-top: 4px solid #402D1D;
-  border-bottom: 4px solid #402D1D;
+  border-top: 4px solid var(--dark-rock);
+  border-bottom: 4px solid var(--dark-rock);
 }
 
 /* Forside side 1 */
 .col-1 {
   display: flex;
-  background-color: #91B7BF;
-  border-bottom: solid 4px #402D1D;
-  border-top: solid 4px #402D1D;
+  background-color: var(--blue);
+  border-bottom: solid 4px var(--dark-rock);
+  border-top: solid 4px var(--dark-rock);
   height: 65%;
   width: 100%;
   margin: 0; 
@@ -92,18 +92,18 @@ section :first-child {
   display: table-cell;
   border-bottom: 4px solid transparent;
   padding: 16px 16px;
-  color: #735E4C;
+  color: var(--rock);
   cursor: pointer;
 }
 
 .tab-wrap .tablink:hover {
-  border-color: #406A73;
-  color: #406A73;
+  border-color: var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 .tab-wrap .tab-active {
-  border-color: #402D1D;
-  color: #402D1D;
+  border-color: var(--dark-rock);
+  color: var(--dark-rock);
 }
 
 .tab-wrap .tab_main {
@@ -113,7 +113,7 @@ section :first-child {
 .tab-wrap .tabcontent {
   display: none;
   font-size: 15px;
-  color: #735E4C;
+  color: var(--rock);
 }
 
 .tab-wrap .tabcontent.active {
@@ -125,10 +125,10 @@ section :first-child {
 .tab-header {
   display: flex;
   flex-direction: column;
-  background-color: #bea691;
+  background-color: var(--dark-sand);
   margin: 0;
   justify-content: center;
-  box-shadow: #402D1D 0px 7px 29px 0px;
+  box-shadow: var(--dark-rock) 0px 7px 29px 0px;
 }
 
 .tab-header li {
@@ -161,7 +161,7 @@ section :first-child {
   .col-1 {
     height: clamp(350px, 51vw, 100vh);
     border: none;
-    border-right: solid 4px #402D1D;
+    border-right: solid 4px var(--dark-rock);
     transform: none;
     width: 150px;
   }
@@ -181,15 +181,15 @@ section :first-child {
   
   .scroll_down {
     display: block;
-    border: solid 4px #402D1D;
+    border: solid 4px var(--dark-rock);
     border-bottom: none;
-    background-color: #735E4C;
+    background-color: var(--rock);
     width: 100%;
     padding: 40px 20px;
   }
 
   .scroll_down:hover {
-    background-color: #402D1D;
+    background-color: var(--dark-rock);
   }
 
   .scroll_down img{
