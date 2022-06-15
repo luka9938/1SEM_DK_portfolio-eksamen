@@ -12,7 +12,7 @@ div {
   box-sizing: border-box;
 }
 
-/* nav */
+/* Nav */
 
 nav {
   position: relative;
@@ -68,10 +68,11 @@ nav li :hover {
 
 .splash {
   display: grid;
-  place-content: center center;
+  background-image: url(../img/pattern.webp);
+  background-size: cover;
   width: 100%;
   height: clamp(200px, 15vw, 125vh);
-  background-size: cover;
+  place-content: center center;
   color: #FFFFFF;
   box-shadow: #402D1D 0px 7px 29px 0px;
 }

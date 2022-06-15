@@ -1,15 +1,20 @@
-/* splash */
+/* Splash */
 #splash_forside {
   display: flex;
   height: clamp(300px, 51vw, 100vh);
-  background-image: url(/img/pattern.webp);
+  background-image: url(../img/pattern.webp);
   border-bottom: solid 4px #735E4C;
   flex-direction: column;
   flex-wrap: wrap;
   align-self: center;
 }
 
-/* forside side 1 */
+#splash_else {
+  border-top: 4px solid #402D1D;
+  border-bottom: 4px solid #402D1D;
+}
+
+/* Forside side 1 */
 .col-1 {
   display: flex;
   background-color: #91B7BF;
@@ -32,7 +37,7 @@
   height: 0%;
 }
 
-/* forside side 2 */
+/* Forside side 2 */
 #bottom_menu {
   display: flex;
   flex-direction: column;
@@ -60,8 +65,88 @@
   object-fit: cover;
 }
 
+/* About */
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#profile {
+  display: flex;
+  max-width: 41vh;
+  height: 60vh;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+section :first-child {
+  font-weight: 1000;
+}
+
+/* Tabs */
+.tab-wrap .tablink {
+  display: table-cell;
+  border-bottom: 4px solid transparent;
+  padding: 16px 16px;
+  color: #735E4C;
+  cursor: pointer;
+}
+
+.tab-wrap .tablink:hover {
+  border-color: #406A73;
+  color: #406A73;
+}
+
+.tab-wrap .tab-active {
+  border-color: #402D1D;
+  color: #402D1D;
+}
+
+.tab-wrap .tab_main {
+  border-top: 0;
+}
+
+.tab-wrap .tabcontent {
+  display: none;
+  font-size: 15px;
+  color: #735E4C;
+}
+
+.tab-wrap .tabcontent.active {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tab-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #bea691;
+  margin: 0;
+  justify-content: center;
+  box-shadow: #402D1D 0px 7px 29px 0px;
+}
+
+.tab-header li {
+  font-family: "grobe deutchmeister", cursive;
+  font-size: 2rem;
+}
+
+/* Project main */
+.col a {
+  font-family: "grobe deutchmeister", cursive;
+  margin: 0 10px;
+  font-size: 1.5rem;
+
+}
+
 @media (min-width: 650px) {
-  /* splash */
+  /* Splash */
   #splash_forside {
     display: flex;
     flex-direction: row;
@@ -69,7 +154,7 @@
     align-self: center;
   }
 
-  /* forside side 1 */
+  /* Forside side 1 */
   .col-1, .col-2, .col-3 {
     flex: 2;
   }
@@ -113,7 +198,7 @@
     height: 100%;
   }
   
-  /* forside side 2 */
+  /* Forside side 2 */
   #bottom_menu {
     flex-direction: row;
     gap: 15px;
@@ -129,5 +214,16 @@
 
   #bottom_menu li {
     transform: none;
+  }
+  
+  /* About */
+  #profile {
+    max-width: 61vh;
+    height: 95vh;
+  }
+
+  /* Tabs */
+  .tab-header {
+    flex-direction: row;
   }
 }
