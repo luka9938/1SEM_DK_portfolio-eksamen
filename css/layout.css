@@ -184,7 +184,7 @@ section :first-child {
     border: solid 4px var(--dark-rock);
     border-bottom: none;
     background-color: var(--rock);
-    width: 100%;
+    width: 20%;
     padding: 40px 20px;
   }
 
