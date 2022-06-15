@@ -175,8 +175,8 @@ main {
 
 .col_img img {
   margin: 20px;
-  width: 370px;
-  height: 190px;
+  width: 330px;
+  height: 160px;
   object-fit: cover;
   border: solid 4px var(--dark-sand);
 }
