@@ -77,7 +77,7 @@ nav li :hover {
 /* Splash */
 .splash {
   display: grid;
-  background-image: url(../img/pattern.webp);
+  background-image: url(../img/splash.webp);
   background-size: cover;
   width: 100%;
   height: clamp(200px, 15vw, 125vh);
